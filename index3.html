@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Wallet Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2d3748;
+    }
+
+    .wallet-balance {
+      text-align: center;
+      background-color: #edf2f7;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .wallet-balance h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .wallet-balance p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2b6cb0;
+    }
+
+    .crypto-list h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .coin {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f7fafc;
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .coin span {
+      font-weight: 500;
+    }
+
+    .coin button {
+      background-color: #3182ce;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .coin button:hover {
+      background-color: #2b6cb0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Crypto Wallet</h1>
+    </header>
+
+    <section class="wallet-balance">
+      <h2>Wallet Balance</h2>
+      <p>$10,250.00</p>
+    </section>
+
+    <section class="crypto-list">
+      <h2>Tracked Cryptocurrencies</h2>
+
+      <div class="coin">
+        <span>Bitcoin (BTC)</span>
+        <span>$27,000</span>
+        <button>Set Alert</button>
+      </div>
+
+      <div class="coin">
+        <span>Ethereum (ETH)</span>
+        <span>$1,600</span>
+        <button>Set Alert</button>
+      </div>
+
+      <div class="coin">
+        <span>Dogecoin (DOGE)</span>
+        <span>$0.06</span>
+        <button>Set Alert</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
